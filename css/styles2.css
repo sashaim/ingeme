@@ -1,0 +1,186 @@
+/* BOOSTRAP */
+
+
+/*Navbar*/
+
+.bg-color{
+    background-color: #042739;
+}
+
+.nav-position{
+    display: flex;
+    justify-content: end;
+    transition: 2s;
+}
+
+/* Estilos main */
+
+.index{
+    background-color: #eeeeee;
+    /* height: 100vh; */
+}
+
+
+.img-index{
+    display:block;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.row-margin{
+    margin: 10px;
+}
+article{
+    height: auto;
+    text-align: start;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+article h1{
+    font-size: 80px;
+    padding: 10px;
+    padding-top:40px ;
+}
+
+article p {
+    font-size: 20px;
+    padding: 10px;
+    padding-top: 70px;
+    text-align: justify;
+}
+
+.botonera-index{
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    padding: 8px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.botonera-index a{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #042739;
+    box-shadow: -1px 1px 7px 0px #000000;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.botonera-index a:hover{
+    background-color: #0077ff;
+}
+
+
+/* Footer */
+
+footer{
+    background-color: #042739;
+    height: 80px;
+}
+
+.footer-index{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 3px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.footer{
+    background-color: #042739;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+
+/* .footer-index a{
+    text-decoration: none;
+    color: #7b7979;
+    text-transform: capitalize;
+}
+
+.footer-index a :hover{
+    color: #ffffff;
+    text-decoration: none;
+    
+}
+ */
+
+
+
+ /* Estilos WE */
+
+ .info-trayectoria{
+    grid-area: trayectoria;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* padding:      5px; */
+    
+}
+
+.info-valores{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* padding: 5px; */
+}
+
+.info-vision{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* padding: 5px; */
+}
+
+.info-mision{
+    grid-area: mision;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* padding: 5px; */
+
+}
+
+.box-nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #042739;
+    color: #ffffffbe;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.box-nosotros h2{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 10px;
+}
+.box-nosotros p{
+    display: flex;
+    padding: 15px;
+}
+
+.row-info{
+    height: 100vh;
+    padding-top: 50px;
+}
