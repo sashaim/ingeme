@@ -182,3 +182,17 @@ footer{
     height: 100vh;
     padding-top: 50px;
 }
+
+/* Vista Servicios */
+
+.servicios-row{
+    height: 100%;
+    margin: 30px;
+}
+.servicios-col{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
