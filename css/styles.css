@@ -48,6 +48,9 @@ article h1{
     font-size: 80px;
     padding: 10px;
     padding-top:40px ;
+    animation-duration: 10s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
 }
 
 article p {
@@ -55,6 +58,7 @@ article p {
     padding: 10px;
     padding-top: 70px;
     text-align: justify;
+    
 }
 
 .botonera-index{
@@ -73,6 +77,16 @@ article p {
     box-shadow: -1px 1px 7px 0px #000000;
     padding: 10px;
     border-radius: 3px;
+
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .botonera-index a:hover{
@@ -87,10 +101,6 @@ footer{
     height: 70px;
 }
 
-
-
-
-
 .footer-prueba{
     display: flex;
     flex-direction: row;
@@ -98,6 +108,7 @@ footer{
     align-items: center;
     font-size: 20px;
     color: #ffffff;
+    transition: 2s;
 }
 .footer-prueba a{
     color: #ffffff46;
@@ -114,6 +125,13 @@ footer{
 
  /* Estilos WE */
 
+ .row-info{
+    height: 100%;
+ }
+.info{
+
+    height: 100%;
+}
  .info-trayectoria{
     grid-area: trayectoria;
     display: flex;
@@ -134,11 +152,11 @@ footer{
     display: flex;
     flex-direction: column;
     text-align: center;
+    /* margin: 10px; */
     
 }
 
 .info-mision{
-    grid-area: mision;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -157,11 +175,15 @@ footer{
     margin: 20px;
     border-radius: 20px;
 }
+
+article{
+    margin: 0;
+    border: 0;
+}
 @media (min-width:850px){
     .box-nosotros:hover{
         background-color: #ffffff;
         color: #042739;
-        text-decoration: double;
     }
 
 }
@@ -179,7 +201,7 @@ footer{
 }
 
 .row-info{
-    height: 100vh;
+    height: 100%;
     padding-top: 50px;
 }
 
@@ -195,4 +217,36 @@ footer{
     flex-direction: column;
     justify-content: center;
 
+}
+
+
+.aa{
+    background-color: #042739;
+}
+
+.prueba{
+    background-color: aqua;
+}
+
+.prueba2{
+    background-color: aquamarine;
+}
+.prueba3{
+    background-color: rgb(255, 127, 229);
+}
+.prueba1{
+    background-color: aquamarine;
+}
+
+.color{
+    background-color: #0077ff;
+
+}
+
+.color1{
+    background-color: red;
+}
+
+.size{
+    width: 50%;
 }
