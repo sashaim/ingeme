@@ -16,7 +16,6 @@
     }
 }
 
-
 /* Estilos main */
 
 .index{
@@ -116,7 +115,7 @@ footer{
 
 .footer-prueba a:hover{
     text-decoration: none;
-    color:white;
+    color:#ffffff;
     font-size: 22px;
 }
 
@@ -125,9 +124,9 @@ footer{
 
  /* Estilos WE */
 
- .row-info{
+.row-info{
     height: 100%;
- }
+}
 .info{
 
     height: 100%;
@@ -152,7 +151,7 @@ footer{
     display: flex;
     flex-direction: column;
     text-align: center;
-    /* margin: 10px; */
+    
     
 }
 
@@ -219,34 +218,3 @@ article{
 
 }
 
-
-.aa{
-    background-color: #042739;
-}
-
-.prueba{
-    background-color: aqua;
-}
-
-.prueba2{
-    background-color: aquamarine;
-}
-.prueba3{
-    background-color: rgb(255, 127, 229);
-}
-.prueba1{
-    background-color: aquamarine;
-}
-
-.color{
-    background-color: #0077ff;
-
-}
-
-.color1{
-    background-color: red;
-}
-
-.size{
-    width: 50%;
-}
