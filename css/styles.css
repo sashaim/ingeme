@@ -100,20 +100,19 @@ footer{
     height: 70px;
 }
 
-.footer-prueba{
+.styles-footer{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    font-size: 20px;
     color: #ffffff;
     transition: 2s;
 }
-.footer-prueba a{
+.styles-footer a{
     color: #ffffff46;
 }
 
-.footer-prueba a:hover{
+.styles-footer a:hover{
     text-decoration: none;
     color:#ffffff;
     font-size: 22px;
@@ -131,7 +130,7 @@ footer{
 
     height: 100%;
 }
- .info-trayectoria{
+.info-trayectoria{
     grid-area: trayectoria;
     display: flex;
     flex-direction: column;
