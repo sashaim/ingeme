@@ -1,40 +1,28 @@
 /* BOOSTRAP */
 
-
 /*Navbar*/
-
 .bg-color{
     background-color: #042739;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
 }
 
-@media (min-width:768px) {
-    .nav-position{
-        display: flex;
-        justify-content: end;
-    }
-}
-
 /* Estilos main */
-
 .index{
     background-color: #eeeeee;
-    
 }
-
 
 .img-index{
     display:block;
     margin: auto;
     padding-top: 50px;
     padding-bottom: 50px;
-
 }
 
 .row-margin{
     margin: 10px;
 }
+
 article{
     height: auto;
     text-align: start;
@@ -56,8 +44,7 @@ article p {
     font-size: 20px;
     padding: 10px;
     padding-top: 70px;
-    text-align: justify;
-    
+    text-align: justify; 
 }
 
 .botonera-index{
@@ -76,7 +63,6 @@ article p {
     box-shadow: -1px 1px 7px 0px #000000;
     padding: 10px;
     border-radius: 3px;
-
 }
 
 @keyframes aparecer{
@@ -92,14 +78,11 @@ article p {
     background-color: #0077ff;
 }
 
-
 /* Footer */
-
 footer{
     background-color: #042739;
     height: 70px;
 }
-
 .styles-footer{
     display: flex;
     flex-direction: row;
@@ -111,15 +94,11 @@ footer{
 .styles-footer a{
     color: #ffffff46;
 }
-
 .styles-footer a:hover{
     text-decoration: none;
     color:#ffffff;
     font-size: 22px;
 }
-
-
-
 
  /* Estilos WE */
 
@@ -135,31 +114,24 @@ footer{
     display: flex;
     flex-direction: column;
     text-align: center;
-    
-    
 }
 
 .info-valores{
     display: flex;
     flex-direction: column;
     text-align: center;
-    
 }
 
 .info-vision{
     display: flex;
     flex-direction: column;
     text-align: center;
-    
-    
 }
 
 .info-mision{
     display: flex;
     flex-direction: column;
     text-align: center;
-    
-
 }
 
 .box-nosotros{
@@ -178,13 +150,6 @@ article{
     margin: 0;
     border: 0;
 }
-@media (min-width:850px){
-    .box-nosotros:hover{
-        background-color: #ffffff;
-        color: #042739;
-    }
-
-}
 
 .box-nosotros h2{
     display: flex;
@@ -193,6 +158,7 @@ article{
     padding-bottom: 10px;
     margin: 10px;
 }
+
 .box-nosotros p{
     display: flex;
     padding: 15px;
@@ -214,6 +180,19 @@ article{
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
+/*Media queries*/
+@media (min-width:768px) {
+    .nav-position{
+        display: flex;
+        justify-content: end;
+    }
+}
+
+@media (min-width:850px){
+    .box-nosotros:hover{
+        background-color: #ffffff;
+        color: #042739;
+    }
+}
