@@ -18,21 +18,11 @@ $title-font: 'Maven Pro', sans-serif;
     font-size: 20px;
 }
 
-@media (min-width:768px) {
-    .nav-position{
-        display: flex;
-        justify-content: end;
-    }
-}
-
 /* Estilos main */
-
 .index{
     background-color: #eeeeee;
     
 }
-
-
 .img-index{
     display:block;
     margin: auto;
@@ -40,12 +30,9 @@ $title-font: 'Maven Pro', sans-serif;
     padding-bottom: 50px;
 
 }
-
 .row-margin{
     margin: 10px;
 }
-
-
 article{
     height: auto;
     text-align: start;
@@ -69,8 +56,6 @@ article{
     }
 }
 
-
-
 .botonera-index{
     display: flex;
     justify-content: space-around;
@@ -90,8 +75,7 @@ article{
         &:hover{
             background-color: #0077ff;
         }
-    }
-    
+    } 
 }
 
 @keyframes aparecer{
@@ -109,7 +93,6 @@ footer{
     background-color: $main-color;
     height: 70px;
 }
-
 .styles-footer{
     display: flex;
     flex-direction: row;
@@ -128,5 +111,14 @@ footer{
         }
     }
 }
+
+//Media queries
+@media (min-width:768px) {
+    .nav-position{
+        display: flex;
+        justify-content: end;
+    }
+}
+
 
 

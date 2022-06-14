@@ -8,12 +8,6 @@
   font-size: 20px;
 }
 
-@media (min-width: 768px) {
-  .nav-position {
-    display: flex;
-    justify-content: end;
-  }
-}
 /* Estilos main */
 .index {
   background-color: #eeeeee;
@@ -105,6 +99,13 @@ footer {
   text-decoration: none;
   color: #ffffff;
   font-size: 22px;
+}
+
+@media (min-width: 768px) {
+  .nav-position {
+    display: flex;
+    justify-content: end;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
