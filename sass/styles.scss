@@ -7,6 +7,40 @@ $secondary-color:#ffffff;
 $grey-color:#929292da;
 $main-font: 'Roboto', sans-serif;
 $title-font: 'Maven Pro', sans-serif;
+$button-hover:#0077ff;
+
+
+// Mixins
+@mixin flex-col-center{
+    display:flex;
+    flex-direction:row;
+    text-align:center;
+}
+@mixin full-height{
+    height: 100%;
+}
+@mixin sizes($width,$height){
+    height: $height;
+    width: $width;
+}
+@mixin flex($flex,$dir,$justify){
+    display: $flex;
+    flex-direction: $dir;
+    justify-content: $justify;
+}
+
+// Extends
+
+.boton{
+    text-decoration: none;
+    text-align: center;
+    color: $secondary-color;
+    background-color: $main-color;
+    box-shadow: -1px 1px 7px 0px #000000;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: $main-font;
+}
 
 /*Index*/
 
@@ -57,23 +91,14 @@ article{
 }
 
 .botonera-index{
-    display: flex;
-    justify-content: space-around;
-    text-decoration: none;
+    @include flex(flex,row,space-around);
     padding: 8px;
     padding-left: 4px;
     padding-right: 4px;
     a{
-        text-decoration: none;
-        color: $secondary-color;
-        background-color: $main-color;
-        box-shadow: -1px 1px 7px 0px #000000;
-        padding: 10px;
-        border-radius: 3px;
-        font-size: $main-font;
-
+        @extend .boton;
         &:hover{
-            background-color: #0077ff;
+            background-color: $button-hover;
         }
     } 
 }
@@ -94,9 +119,7 @@ footer{
     height: 70px;
 }
 .styles-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    @include flex(flex,row,space-around);
     align-items: center;
     font-size: 20px;
     color: $secondary-color;
@@ -112,13 +135,95 @@ footer{
     }
 }
 
-//Media queries
+//   Nosotros
+
+ /* Estilos WE */
+
+.row-info{
+    @include full-height;
+}
+.info{
+    @include full-height;
+}
+.info-trayectoria{
+    @include flex-col-center;
+}
+
+.info-valores{
+    @include flex-col-center;
+}
+
+.info-vision{
+    @include flex-col-center;
+}
+
+.info-mision{
+    @include flex-col-center;
+}
+
+.box-nosotros{
+    @include flex(flex,column,center);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: $main-color;
+    color: #ffffffbe;
+    margin: 20px;
+    border-radius: 20px;
+    h2{
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 10px;
+    }
+    p{
+        display: flex;
+        padding: 15px;
+    }
+}
+
+
+.row-info{
+    @include full-height;
+    padding-top: 50px;
+}
+
+article{
+    margin: 0;
+    border: 0;
+}
+
+/* Vista Servicios */
+
+.servicios-row{
+    height: 100%;
+    margin: 30px;
+}
+.servicios-col{
+    padding: 40px;
+    @include flex(flex,column,center);
+}
+
+// Obras
+.obras {
+    height: 100vh;
+}
+
+/*Media queries*/
 @media (min-width:768px) {
     .nav-position{
         display: flex;
         justify-content: end;
     }
 }
+
+@media (min-width:850px){
+    .box-nosotros:hover{
+        background-color: $secondary-color;
+        color: $main-color;
+    }
+}
+
 
 
 

@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bai+Jamjuree:wght@300&family=Maven+Pro:wght@500&family=Permanent+Marker&family=Roboto&family=Teko:wght@600;700&display=swap");
 /* Variables */
+.boton, .botonera-index a {
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  background-color: #042739;
+  box-shadow: -1px 1px 7px 0px #000000;
+  padding: 10px;
+  border-radius: 3px;
+  font-size: "Roboto", sans-serif;
+}
+
 /*Index*/
 /*Navbar*/
 .bg-color {
@@ -49,20 +60,11 @@ article p {
 
 .botonera-index {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
-  text-decoration: none;
   padding: 8px;
   padding-left: 4px;
   padding-right: 4px;
-}
-.botonera-index a {
-  text-decoration: none;
-  color: #ffffff;
-  background-color: #042739;
-  box-shadow: -1px 1px 7px 0px #000000;
-  padding: 10px;
-  border-radius: 3px;
-  font-size: "Roboto", sans-serif;
 }
 .botonera-index a:hover {
   background-color: #0077ff;
@@ -101,10 +103,100 @@ footer {
   font-size: 22px;
 }
 
+/* Estilos WE */
+.row-info {
+  height: 100%;
+}
+
+.info {
+  height: 100%;
+}
+
+.info-trayectoria {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.info-valores {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.info-vision {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.info-mision {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.box-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #042739;
+  color: rgba(255, 255, 255, 0.7450980392);
+  margin: 20px;
+  border-radius: 20px;
+}
+.box-nosotros h2 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 10px;
+}
+.box-nosotros p {
+  display: flex;
+  padding: 15px;
+}
+
+.row-info {
+  height: 100%;
+  padding-top: 50px;
+}
+
+article {
+  margin: 0;
+  border: 0;
+}
+
+/* Vista Servicios */
+.servicios-row {
+  height: 100%;
+  margin: 30px;
+}
+
+.servicios-col {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.obras {
+  height: 100vh;
+}
+
+/*Media queries*/
 @media (min-width: 768px) {
   .nav-position {
     display: flex;
     justify-content: end;
+  }
+}
+@media (min-width: 850px) {
+  .box-nosotros:hover {
+    background-color: #ffffff;
+    color: #042739;
   }
 }
 
