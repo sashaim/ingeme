@@ -183,7 +183,88 @@ article {
 }
 
 .obras {
-  height: 100vh;
+  height: auto;
+  padding: 10px;
+}
+
+.titulo-obras {
+  font-size: 160px;
+  font-family: "Maven Pro", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.styles-carousel {
+  display: flex;
+  justify-content: center;
+}
+
+.titulo-contacto {
+  align-content: center;
+  font-size: 70px;
+  padding: 10px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: justify;
+  font-family: "Roboto", sans-serif;
+  padding: 20px;
+}
+.contact-info a {
+  text-decoration: none;
+  font-size: 22px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: color;
+  color: #042739;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=reset] {
+  background-color: color;
+  color: #042739;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #0077ff;
+}
+
+input[type=reset]:hover {
+  background-color: #0077ff;
+}
+
+.contact-form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 20px;
 }
 
 /*Media queries*/
@@ -197,6 +278,12 @@ article {
   .box-nosotros:hover {
     background-color: #ffffff;
     color: #042739;
+  }
+}
+@media (min-width: 768) {
+  .styles-footer {
+    display: flex;
+    flex-direction: column;
   }
 }
 
