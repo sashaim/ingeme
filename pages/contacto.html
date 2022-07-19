@@ -39,33 +39,37 @@
             </ul>
         </nav> 
     </header>
-    <main class="row container-fluid contact">
-        <div class="col-md-6 col-sm-12 contact-info">
-            <h1 class="titulo-contacto">Contacto</h1>
-            <h2>Email</h2>
-            <a href="mailto:ingeme@ingeme.com.ar">Ingeme@ingeme.com.ar</a>
-            <h2>Telefono</h2>
-            <a href="tel:+5492804430010">+5492804430010</a>
-            <h2>Direccion</h2>
-            <a class="direccion" href="https://www.google.com/maps/place/Rivadavia+253+oficina+4,+Trelew,+Chubut/@-43.252071,-65.3115898,17z/data=!3m1!4b1!4m5!3m4!1s0xbe0144b788f51a51:0x3f300eefdeab4ee7!8m2!3d-43.252071!4d-65.3094011"> Rivadavia 253 , Trelew, Chubut</a>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.9690240448995!2d-65.3094011!3d-43.252071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbe0144b788f51a51%3A0x3f300eefdeab4ee7!2sRivadavia%20253%20oficina%204%2C%20Trelew%2C%20Chubut!5e0!3m2!1ses-419!2sar!4v1657580501598!5m2!1ses-419!2sar" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="col-md-6 col-sm-12 container contact-form" >
-            
-                <form action="action_page.php">
+    <main class="container-fluid">
+        <div class="row"> 
+            <div class="col-md-6 col-sm-12 contact-info">
+                <h1 class="titulo-contacto">Contacto</h1>
+                <h2>Email</h2>
+                <a href="mailto:ingeme@ingeme.com.ar">Ingeme@ingeme.com.ar</a>
+                <h2>Telefono</h2>
+                <a href="tel:+5492804430010">+5492804430010</a>
+                <h2>Direccion</h2>
+                <a class="direccion" href="https://www.google.com/maps/place/Rivadavia+253+oficina+4,+Trelew,+Chubut/@-43.252071,-65.3115898,17z/data=!3m1!4b1!4m5!3m4!1s0xbe0144b788f51a51:0x3f300eefdeab4ee7!8m2!3d-43.252071!4d-65.3094011"> Rivadavia 253 , Trelew, Chubut</a>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.9690240448995!2d-65.3094011!3d-43.252071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbe0144b788f51a51%3A0x3f300eefdeab4ee7!2sRivadavia%20253%20oficina%204%2C%20Trelew%2C%20Chubut!5e0!3m2!1ses-419!2sar!4v1657580501598!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-md-4 col-sm-8 container contact-form" >
+                
+                    <form action="action_page.php">
+    
+                        <label for="fname">Nombre </label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        <label for="lname">Apellido</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        <label for="email">Email </label>
+                        <input type="text" id="email" name="email" placeholder="Your email..">
+                        <label for="subject">Consulta</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        <div class="botonera-form">
+                            <input type="reset" value="Borrar">
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </form>
+            </div>
 
-                    <label for="fname">Nombre </label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                    <label for="lname">Apellido</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                    <label for="email">Email </label>
-                    <input type="text" id="email" name="email" placeholder="Your email..">
-                    <label for="subject">Consulta</label>
-                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                    <input type="reset" value="Borrar">
-                    <input type="submit" value="Enviar">
-                </form>
-            
         </div>
     </main>
     
